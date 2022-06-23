@@ -87,12 +87,12 @@ public class SwitchPavyzdys {
      * @return String tipo dienos tekstą
      */
     public static String dienaTekstuSuMasyvu(int diena) {
-        final String[] dienos = {"Pirmadienis", "Antradienis", "Trečiadienis", "Ketvirtadienis", "Penktadienis", "Šeštadienis", "Sekmadienis"};
+        final String[] dienos = {"Netinkama diena", "Pirmadienis", "Antradienis", "Trečiadienis", "Ketvirtadienis", "Penktadienis", "Šeštadienis", "Sekmadienis"};
         if ((diena <= 7) && (diena > 0)) {
-            return dienos[diena - 1];
+            return dienos[diena];
         }
         else {
-            return "Netinkama diena";
+            return dienos[0];
         }
 
     }
